@@ -1,8 +1,4 @@
 @import "tailwindcss";
-
-*{
-  font-family: Outfit;
-}
 @theme {
   /* --- Cấu hình màu sắc --- */
   /* Thay vì "colors: { lightHover: ... }" */
