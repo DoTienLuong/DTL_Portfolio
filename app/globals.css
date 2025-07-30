@@ -22,3 +22,5 @@
   --grid-template-columns-16: repeat(16, minmax(0, 1fr));
 }
 
+/* darkmode */
+@custom-variant dark (&:where(.dark, .dark *));
