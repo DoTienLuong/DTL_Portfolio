@@ -10,11 +10,15 @@
   /* --- Cấu hình Font --- */
   /* Thay vì "fontFamily: { sans: ... }" */
   /* Chúng ta dùng CSS variable với tiền tố --font- */
-  --font-sans: var(--font-outfit); /* Vẫn dùng biến từ next/font */
+  --font-sans: var(--font-outfit);  /* Vẫn dùng biến từ next/font */
   --font-Ovo: var(--font-ovo);   /* Vẫn dùng biến từ next/font */
 
   /* box shadow */
   --shadow-black: 4px 4px 0 #000;
   --shadow-white: 4px 4px 0 #fff;
+
+  /* gridTemplateColumes */ 
+  --grid-template-columns-auto: repeat(auto-fit, minmax(200px, 1fr));
+  --grid-template-columns-16: repeat(16, minmax(0, 1fr));
 }
 
