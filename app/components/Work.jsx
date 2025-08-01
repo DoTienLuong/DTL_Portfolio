@@ -10,7 +10,7 @@ const Work = ({ isDarkMode }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       id='work'
-      className='w-full px-[12%] py-10 scroll-mt-20'
+      className='w-full px-[12%] py-10 scroll-mt-20 relative z-0'
     >
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
@@ -18,28 +18,25 @@ const Work = ({ isDarkMode }) => {
         transition={{duration: 0.5, delay: 0.3 }}
         className='text-center mb-2 text-lg font-Ovo'
       >
-        My portfolio
+        My Portfolio
       </motion.h4>
       <motion.h2 
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0,  opacity: 1 }}
         transition={{duration: 0.5, delay: 0.5 }}
-        className='text-center text-5xl font-Ovo'>My latest work</motion.h2>
+        className='text-center text-5xl font-Ovo'>My Latest Project</motion.h2>
       <motion.p 
         initial={{opacity: 0 }}
         whileInView={{opacity: 1 }}
         transition={{duration: 0.5, delay: 0.7}}
-        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem
-        corporis asperiores ullam magni. Suscipit rem nulla nisi dicta excepturi
-        minus atque, ex vero laudantium nesciunt architecto explicabo similique
-        repudiandae repellendus.
+        className='text-left lg:text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+        With all the knowledge I have learned, I always want to apply it to create interesting projects to report to my teachers. I like to create my own projects to serve my personal and work needs.
       </motion.p>
       <motion.div 
         initial={{opacity: 0}}
         whileInView={{opacity:1}}
         transition={{duration:0.6, delay: 0.9}}
-        className='grid grid-cols-auto my-10 gap-5 dark:text-black'>
+        className='grid grid-cols-auto my-10 gap-5 dark:text-black isolate'>
         {workData.map((project, index) => (
           <motion.div
             whileHover={{scale:1.05}}
@@ -47,6 +44,7 @@ const Work = ({ isDarkMode }) => {
             key={index}
             className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group'
             style={{ backgroundImage: `url(${project.bgImage})` }}
+            onClick={()=> window.open(project.link, '_blank')}
           >
             <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7'>
               <div>

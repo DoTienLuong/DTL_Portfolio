@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import Services from "./components/Services";
 import Work from "./components/Work";
+import ContactBar from "./components/ContactBar/ContactBar";
 export default function Home() {
   // cau hinh dark mode
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -30,13 +31,16 @@ export default function Home() {
   },[isDarkMode])
   return (
     <>
-      <NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
-      <Header isDarkMode={isDarkMode} />
-      <About isDarkMode={isDarkMode} />
-      <Services isDarkMode={isDarkMode} />
-      <Work isDarkMode={isDarkMode} />
-      <Contact isDarkMode={isDarkMode} />
-      <Footer isDarkMode={isDarkMode} />
+      <div className="flex flex-col">
+        <NavBar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+        <Header isDarkMode={isDarkMode} />
+        <About isDarkMode={isDarkMode} />
+        <Services isDarkMode={isDarkMode} />
+        <Work isDarkMode={isDarkMode} />
+        <Contact isDarkMode={isDarkMode} />
+        <Footer isDarkMode={isDarkMode} />
+        <ContactBar />
+      </div>
     </>
   );
 }

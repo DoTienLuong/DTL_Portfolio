@@ -1,0 +1,87 @@
+@keyframes gentleFloat {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-3.5px);
+    }
+}
+
+.floatingContactBar {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các nút */
+    z-index: 1001; /* Đảm bảo nó nổi trên mọi thứ */
+}
+
+.contactButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+
+    animation-name: gentleFloat;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+/* Mỗi icon sẽ có độ trễ animation khác nhau */
+.contactButton:nth-child(1) { animation-delay: 0s; }
+.contactButton:nth-child(2) { animation-delay: 0.3s; }
+.contactButton:nth-child(3) { animation-delay: 0.6s; }
+.contactButton:nth-child(4) { animation-delay: 0.9s; }
+.contactButton:hover {
+    /* transform: scale(1.1) translateY(-3px); Hiệu ứng khi di chuột vào */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Màu riêng cho từng nút */
+.phoneBtn {
+    background-color: #25d366; /* Màu xanh lá cây */
+}
+
+.zaloBtn {
+    background-color: #0068ff; /* Màu xanh dương của Zalo */
+    padding: 0; /* Bỏ padding để ảnh vừa khít */
+}
+
+/* Style cho ảnh Zalo bên trong nút */
+.zaloImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.messengerBtn {
+    background: linear-gradient(45deg, #a234e9, #6e53e0, #0084ff); /* Màu gradient của Messenger */
+}
+
+.mapsBtn {
+    background-color: #ea4335; /* Màu đỏ của Google Maps */
+}
+
+
+@media (max-width: 400px) {
+    .floatingContactBar {
+        bottom: 20px;
+        right: 20px;
+        gap: 10px; /* Giảm khoảng cách giữa các nút */
+    }
+
+    .contactButton {
+        width: 35px;
+        height: 35px;
+        font-size: 20px; /* Giảm kích thước chữ */
+    }
+}

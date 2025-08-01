@@ -15,22 +15,19 @@ const Services = () => {
         initial={{y:- 20, opacity: 0}}
         whileInView={{y: 0 , opacity:1}}
         transition={{duration:0.5, delay: 0.3}}
-        className='text-center mb-2 text-lg font-Ovo'>What I offer
+        className='text-center mb-2 text-lg font-Ovo'>My Capabilities
       </motion.h4>
       <motion.h2 
         initial={{y:- 20, opacity: 0}}
         whileInView={{y: 0 , opacity:1}}
         transition={{duration:0.5, delay: 0.5}}
-        className='text-center text-5xl font-Ovo'>My Services</motion.h2>
+        className='text-center text-5xl font-Ovo'>What I Can Build</motion.h2>
       <motion.p 
         initial={{opacity: 0}}
         whileInView={{opacity:1}}
         transition={{duration:0.5, delay: 0.7}}
-        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem
-        corporis asperiores ullam magni. Suscipit rem nulla nisi dicta excepturi
-        minus atque, ex vero laudantium nesciunt architecto explicabo similique
-        repudiandae repellendus.
+        className='text-left lg:text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+        I really like to do projects that combine backend and frontend, I always master each component in the project. I like to incorporate AI into the project to make the product more modern, convenient and bring many interesting experiences to users.
       </motion.p>
       <motion.div 
         initial={{opacity: 0}}

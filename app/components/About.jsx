@@ -44,10 +44,7 @@ const About = ({isDarkMode}) => {
           transition={{duration:0.6, delay: 0.8}}
           className='flex-1'>
           <p className='mb-10 max-w-2xl font-Ovo'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
-            mollitia earum consequatur. Neque quam laborum animi odio beatae
-            delectus fugiat eos, minima vero maiores qui! Est delectus tenetur
-            numquam amet.
+            As a senior student majoring in Software Engineering at IUH, I have a passion for building complete applications, from user interface to backend systems.
           </p>
           <motion.ul 
             initial={{opacity:0}}
@@ -58,7 +55,7 @@ const About = ({isDarkMode}) => {
                 <motion.li 
                   whileHover={{scale:1.05}}
                   className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50' key={index}>
-                    <Image src={icon} alt={title} className='w-7 mt-3'/>
+                    <Image src={isDarkMode? iconDark : icon} alt={title} className='w-7 mt-3'/>
                     <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}</h3>
                     <p className='text-gray-600 text-sm dark:text-white/80'>{description}</p>
                 </motion.li>
@@ -73,12 +70,12 @@ const About = ({isDarkMode}) => {
             initial={{opacity:0}}
             whileInView={{opacity:1}}
             transition={{duration:0.6, delay: 1.5}}
-            className='flex items-center gap-3 sm:gap-5'>
+            className='inline-grid grid-cols-5 gap-3 sm:gap-5 lg:grid-cols-8'>
             {toolsData.map((tool,index)=>(
               <motion.li 
                 whileHover={{scale:1.1}}
                 className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500' key={index}>
-                <Image src={tool} alt='Tool' className='w-5 sm:w-7' />
+                <Image src={tool.icon} alt='Tool' className='w-5 sm:w-7' title={tool.title} />
               </motion.li>
             ))}
           </motion.ul>

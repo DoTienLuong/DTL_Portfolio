@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const Header = () => {
   return (
-    <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
+    <div className='pt-24 lg:pt-0 w-11/12 max-w-3xl text-center mx-auto min-h-screen flex flex-col items-center justify-center gap-4'>
       <motion.div
         initial={{scale:0}}
         whileInView={{scale:1}}
@@ -26,15 +26,14 @@ const Header = () => {
         whileInView={{y:0, opacity:1}}
         transition={{duration:0.8, delay: 0.5}}
         className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-        intern fullstack developer based in IUH
+        Software Engineer with a Passion for Full-Stack & AI Solutions
       </motion.h1>
       <motion.p 
         initial={{opacity: 0}}
         whileInView={{opacity:1}}
         transition={{duration:0.6, delay: 0.7}}
         className='max-w-2xl mx-auto font-Ovo'>
-        Toi la sinh vien nam 4 truong iuh, toi co kinh nghiem thuc te voi
-        microsoft, tesla and apple
+         I'm a final-year student at IUH, specializing in building robust applications with React, Java, and Python. I have hands-on experience in leveraging AI models like Gemini and OpenAI to create intelligent, user-centric features.
       </motion.p>
       <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
         <motion.a

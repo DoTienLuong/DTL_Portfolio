@@ -9,10 +9,8 @@ import vscode from './vscode.png';
 import firebase from './firebase.png';
 import figma from './figma.png';
 import git from './git.png';
-import mongodb from './mongodb.png';
 import right_arrow_white from './right-arrow-white.png';
-import logo from './logo.png';
-import logo_dark from './logo_dark.png';
+import logo from './logo.jpg';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
 import profile_img from './profile-img.png';
@@ -36,7 +34,33 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
+// icon for tools used
+import github_icon from './github.png';
+import intelliJ_icon from './intelliJ.png';
+import postman_icon from './postman.png';
+import mariadb_icon from './mariadb.png';
+import sqlserver_icon from './sqlserver.png';
+import docker_icon from './docker.png';
+import neo4j_icon from './neo4j.png';
+import vmware_icon from './vmware.png';
+import virtualbox_icon from './virtualbox.png';
+import dev_c_icon from './dev_c.png';
+import mongodb from './mongodb.png';
+import eclipse from './eclipse.png';
+
 export const assets = {
+    github_icon,
+    intelliJ_icon,
+    postman_icon,
+    mariadb_icon,
+    sqlserver_icon,
+    docker_icon,
+    neo4j_icon,
+    vmware_icon,
+    virtualbox_icon,
+    dev_c_icon,
+    mongodb,
+    eclipse,
     user_image,
     code_icon,
     code_icon_dark,
@@ -48,10 +72,8 @@ export const assets = {
     firebase,
     figma,
     git,
-    mongodb,
     right_arrow_white,
     logo,
-    logo_dark,
     mail_icon,
     mail_icon_dark,
     profile_img,
@@ -78,24 +100,28 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'My Services Website',
+        description: 'React JS, Email JS, Github',
         bgImage: '/work-1.png',
+        link: 'https://dtluongg.github.io/dtlservices'
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'My Workshop Website',
+        description: 'React JS, Web3Form, GitHub',
         bgImage: '/work-2.png',
+        link: 'https://dotienluong.github.io/work_shop_dtl/'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'React JS - Mini App',
+        description: 'React JS, HTML, CSS',
         bgImage: '/work-3.png',
+        link: 'https://dtluongg.github.io/dtlminiapp'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Java Full Stack Project',
+        description: 'Java, MariaDB, Supabase, AWS',
         bgImage: '/work-4.png',
+        link: 'https://dtluongg.github.io/dtlfullstack'
     },
 ]
 
@@ -107,11 +133,27 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Eng in Software Engineering at IUH (GPA: 3.05/4.0), graduating in June 2026' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: '5+ diverse projects, from an AI-powered search engine using Gemini API to full-stack web and mobile apps' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Java, HTML, CSS, JavaScript, React Js, Next Js, Python, Mongodb, SQL, MariaDB' }
+
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    { icon: assets.vscode, title: 'VS Code' },
+    { icon: assets.dev_c_icon, title: 'Dev C++' },
+    { icon: assets.eclipse, title: 'Eclipse' },
+    { icon: assets.intelliJ_icon, title: 'IntelliJ IDEA' },
+    { icon: assets.git, title: 'Git' },
+    { icon: assets.github_icon, title: 'GitHub' },
+    { icon: assets.mongodb, title: 'MongoDB' },
+    { icon: assets.neo4j_icon, title: 'Neo4j' },
+    { icon: assets.postman_icon, title: 'Postman' },
+    { icon: assets.mariadb_icon, title: 'MariaDB' },
+    { icon: assets.sqlserver_icon, title: 'SQL Server' },
+    { icon: assets.firebase, title: 'Firebase' },
+    { icon: assets.figma, title: 'Figma' },
+    { icon: assets.docker_icon, title: 'Docker' },
+    { icon: assets.vmware_icon, title: 'VMware' },
+    { icon: assets.virtualbox_icon, title: 'VirtualBox' },
 ];
