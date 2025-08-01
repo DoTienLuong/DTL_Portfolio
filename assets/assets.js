@@ -112,16 +112,16 @@ export const workData = [
         link: 'https://dotienluong.github.io/work_shop_dtl/'
     },
     {
-        title: 'React JS - Mini App',
-        description: 'React JS, HTML, CSS',
+        title: 'ChatSkibidi Law ',
+        description: 'Python, LLM, Streamlit, Docker',
         bgImage: '/work-3.png',
-        link: 'https://dtluongg.github.io/dtlminiapp'
+        link: 'https://github.com/HieuTrungMc/Nhom8_BigData_ChatSkibidi_FinalProject'
     },
     {
         title: 'Java Full Stack Project',
-        description: 'Java, MariaDB, Supabase, AWS',
+        description: 'Java, RMI-Client-Server',
         bgImage: '/work-4.png',
-        link: 'https://dtluongg.github.io/dtlfullstack'
+        link: 'https://github.com/dtluongg/Project_PhanTan_QLDBNH'
     },
 ]
 

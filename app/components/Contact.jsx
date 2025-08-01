@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import { motion } from "motion/react";
 
 const Contact = () => {
-    const [result, setResult] = useState("");
+  const [result, setResult] = useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -39,18 +39,18 @@ const Contact = () => {
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0,  opacity: 1 }}
         transition={{duration: 0.5, delay: 0.5 }}
-        className='text-center mb-2 text-lg font-Ovo'>Connect with me</motion.h4>
+        className='text-center mb-2 text-lg font-Ovo'>Connect With Me</motion.h4>
       <motion.h2 
         initial={{ y: -20, opacity: 0 }}
         whileInView={{ y: 0,  opacity: 1 }}
         transition={{duration: 0.5, delay: 0.3 }}
-        className='text-center text-5xl font-Ovo'>Get in touch</motion.h2>
+        className='text-center text-5xl font-Ovo'>Get In Touch</motion.h2>
       <motion.p 
         initial={{opacity: 0}}
         whileInView={{opacity:1}}
         transition={{duration:0.5, delay: 0.7}}
-        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        xin chao moi nguoi, hy vong moi nguoi se an tuong voi cv cua toi va cho toi co hoi duoc lam viec voi moi nguoi 
+        className='md:text-left lg:text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+        I am currently looking for a company to intern, hope you will give me the opportunity to try and work at the company, please contact me via the email form below.
       </motion.p>
         <motion.form 
           initial={{opacity: 0}}
@@ -80,7 +80,7 @@ const Contact = () => {
               transition={{duration:0.3}}
               type='submit'
                 className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 cursor-pointer dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover'>
-                Submit now <Image src={assets.right_arrow_white} alt='' className='w-4'/>
+                Send now <Image src={assets.right_arrow_white} alt='' className='w-4'/>
             </motion.button>
             <p>{result}</p>
         </motion.form>
