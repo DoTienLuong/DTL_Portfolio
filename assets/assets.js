@@ -25,8 +25,6 @@ import menu_black from './menu-black.png';
 import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
-import web_icon from './web-icon.png';
-import mobile_icon from './mobile-icon.png';
 import ui_icon from './ui-icon.png';
 import graphics_icon from './graphics-icon.png';
 import right_arrow from './right-arrow.png';
@@ -48,7 +46,17 @@ import dev_c_icon from './dev_c.png';
 import mongodb from './mongodb.png';
 import eclipse from './eclipse.png';
 
+// icon for work used
+import web_icon from './web-icon.png';
+import ai_icon from './AI.png';
+import mobile_icon from './mobile.png';
+import program_icon from './program.png';
+
+
 export const assets = {
+    ai_icon,
+    mobile_icon,
+    program_icon,
     github_icon,
     intelliJ_icon,
     postman_icon,
@@ -126,10 +134,10 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Web design', description: 'Design and deploy websites using various libraries such as react js, next js,...', link: '' },
+    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Design and deploy mobile apps using React Native and open source AI integration.', link: '' },
+    { icon: assets.program_icon, title: 'Java program', description: 'Design and implement basic applications with Java OOP, EDP, RMI.', link: '' },
+    { icon: assets.ai_icon, title: 'AI with App', description: 'Deploy applications that integrate LLM with open source like gemini, openAI.', link: '' },
 ]
 
 export const infoList = [

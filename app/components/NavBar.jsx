@@ -40,7 +40,7 @@ const NavBar = ({ isDarkMode, setIsDarkMode }) => {
           // className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
           //   isScroll ? '' : 'bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent'
           // } `}
-          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? '' : 'bg-white shadow-sm bg-opacity-50'}`}
+          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? '' : 'bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent'}`}
         >
           <li>
             <a className='font-Ovo' href='#top'>
@@ -70,7 +70,7 @@ const NavBar = ({ isDarkMode, setIsDarkMode }) => {
         </ul>
         <div className='flex items-center gap-4'>
           <button onClick={()=>setIsDarkMode(prev=>!prev)}>
-            <Image src={isDarkMode? assets.sun_icon:assets.moon_icon} alt='' className='w-6' />
+            <Image src={isDarkMode? assets.sun_icon:assets.moon_icon} alt='' className='w-6 hover:cursor-pointer' />
           </button>
 
           <a
