@@ -3,7 +3,7 @@ import zalo from './zalo-icon.png';
 export const contactList = [
     {
         type: 'phone',
-        href: 'tel:0379499255',
+        href: 'tel:0899636633',
         title: 'Call me now',
         iconClass: 'fa-solid fa-phone'
     },
