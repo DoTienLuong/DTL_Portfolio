@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const Header = () => {
   return (
-    <div className='pt-0 lg:mt-16 w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
+    <div className='mt-24 lg:mt-40 w-11/12 max-w-3xl text-center mx-auto flex flex-col items-center justify-center gap-4'>
       <motion.div
         initial={{scale:0}}
         whileInView={{scale:1}}
@@ -50,7 +50,7 @@ const Header = () => {
           initial={{y: 30, opacity: 0}}
           whileInView={{y: 0, opacity:1}}
           transition={{duration:0.6, delay: 1.2}}
-          href='/sample-resume.pdf'
+          href='/CV_Do_Tien_Luong_Fullstack_Intern.pdf'
           download
           className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black'
         >
