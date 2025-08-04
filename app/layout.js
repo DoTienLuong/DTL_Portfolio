@@ -12,7 +12,7 @@ export const metadata = {
   title: "Portfolio - Do Tien Luong",
   description: "",
   icons:{
-    icon: '/favicon.ico'
+    icon: '/logo.jpg'
   }
 };
 
