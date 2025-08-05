@@ -141,7 +141,7 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Eng in Software Engineering at IUH (GPA: 3.05/4.0), graduating in June 2026' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Eng in Software Engineering at IUH (GPA: 3.02/4.0), graduating in June 2026' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: '5+ diverse projects, from an AI-powered search engine using Gemini API to full-stack web and mobile apps' },
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'Java, HTML, CSS, JavaScript, React Js, Next Js, Python, Mongodb, SQL, MariaDB' }
 
