@@ -16,7 +16,7 @@ const Footer = ({isDarkMode}) => {
         <p>© 2025 Developed by Do Tien Luong</p>
         <ul className='flex items-center justify-center gap-10 mt-4 sm:mt-0'>
             <li><a target='_blank' href="https://github.com/DoTienLuong">Github</a></li>
-            <li><a target='_blank' href="linkgithub">Linkedln</a></li>
+            <li><a target='_blank' href="https://www.linkedin.com/in/dotienluong">Linkedln</a></li>
             <li><a target='_blank' href="https://www.facebook.com/luongxmen1402">Facebook</a></li>
         </ul>
       </div>
